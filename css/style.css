@@ -1,0 +1,141 @@
+
+*{
+  margin:0; padding:0; box-sizing:border-box;
+  list-style:none; text-decoration:none; color:#333; text-align:center; 
+  font-size:18px;
+  font-family: 'Nanum Gothic', serif;
+}
+/* reset */
+html, body{ width:100%; height:100%; }
+
+.wrap{
+  overflow:hidden;
+/*   background:#fff; */
+ 
+}
+.wrap section{
+  height:100vh; 
+  width:100%;
+  overflow:hidden;
+ 
+}
+.content{
+  width:fit-content;
+}
+
+
+#intro{ 
+  background-color:#aaa;
+  width:100%;
+  height:100%;
+}
+#intro *{
+   color:#bfa380;
+}
+
+.nav-btn{
+  width:300px;
+  height:300px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%); 
+  overflow:hidden;
+  background-color:rgba(255,255,255,.7);
+  border:5px solid #fff;
+  border-radius:50%;
+}
+#intro h1{  
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  display:table;
+/*  h1 shape  */
+
+}
+#intro h1>span{
+  display:table-cell;
+  vertical-align:middle;
+  font-family: 'Raleway', sans-serif;
+  font-size:2em;
+  text-shadow:0px 2px gray;
+/*  h1 text  */
+}
+#intro h1>div.m-icon{
+  position:absolute;
+  top:30px;
+  left:50%;
+  transform:translate(-50%, 0);
+  z-index:3;
+  width:30px;
+  height:30px;
+}
+#intro h1>div.m-icon>hr{
+  width:30px;
+  height:4px;
+  margin:5px 0;
+  background:#bfa380;
+  border:none;
+  border-radius:2px;
+  transition:transform 0.2s;
+}
+.clicked-btn>hr{
+  margin:0 !important;
+  position:absolute;
+  transform-origin:50% 50%;
+}
+.clicked-btn>hr:nth-child(1){
+  transform:rotate(45deg);
+  width:35px !important;
+}
+.clicked-btn>hr:nth-child(2){
+  opacity:0
+}
+.clicked-btn>hr:nth-child(3){
+  transform:rotate(-45deg);
+  width:35px !important;
+}
+
+
+/* nav - navigation */
+
+.menu{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);  
+}
+.menu>li{
+  text-shadow:0px 1px gray;
+  font-weight:bolder;
+  background-color:rgba(255,255,255,.4);
+  border:1px solid #fff;
+  opacity:0;
+  width:50%;
+  height:50%;
+  float:left;
+  position:relative;
+}
+.menu>li:nth-child(1) a{
+  position:absolute;
+  bottom:30px;
+  right:20px;
+}
+.menu>li:nth-child(2) a{
+  position:absolute;
+  bottom:30px;
+  left:20px;
+}
+.menu>li:nth-child(3) a{
+  position:absolute;
+  top:30px;
+  right:20px;
+}
+.menu>li:nth-child(4) a{
+  position:absolute;
+  top:30px;
+  left:20px;
+}
+/* nav - navigation end */
